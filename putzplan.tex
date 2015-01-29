@@ -1,0 +1,203 @@
+%
+% $Author$
+% $File$
+% $Date$
+% $Revision$
+%
+
+\documentclass[9pt,a4paper]{article}
+\usepackage{pdflscape}
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fix-cm}
+\usepackage{lmodern}
+\usepackage[left]{eurosym}
+
+\usepackage[top=1.0cm, bottom=1.0cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+%\usepackage{tabu}
+
+\usepackage{color, colortbl}
+\usepackage{multirow}
+\usepackage{rotating}
+
+\pagestyle{empty}
+
+\usepackage[pdfauthor={Maksym Deineko},
+            pdfproducer={PdfLaTeX},
+            pdfcreator={PDFLaTeX},
+            colorlinks=true,
+            linkcolor=blue,
+            linktoc=section,
+            unicode=true
+            ]{hyperref}
+\hypersetup{pdftitle=WG\ Putzplan}
+
+\makeatletter
+
+\newlength\oriarrayrulewidth 
+\newcount\orilowpenalty
+\newcommand\nobreakmidrule{%
+ \noalign{\global\oriarrayrulewidth\arrayrulewidth\relax
+          \global\orilowpenalty\@lowpenalty\relax
+          \global\@lowpenalty=\numexpr-10000\relax%
+          \global\arrayrulewidth\lightrulewidth\relax}
+ \hline
+ \noalign{\global\@lowpenalty=\orilowpenalty\relax%
+          \global\arrayrulewidth\oriarrayrulewidth\relax}}
+
+\makeatother
+
+\begin{document}
+\begin{landscape}
+
+\selectlanguage{ngerman}
+
+\begin{center}
+
+{\Large \sc WG Putzplan}
+%\vspace{0.5cm}\\
+
+\noindent
+\definecolor{Gray}{gray}{0.9}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\renewcommand{\tabcolsep}{10pt}
+\setlength{\extrarowheight}{1.2ex}
+\newcolumntype{g}{>{\columncolor{Gray}}c}
+
+\begin{longtable}{p{4cm}gcgcgcgc}
+  \toprule
+
+  %\multirow{1}{*}{\bf KW} &
+   &
+  \rotatebox[origin=c]{50}{2. Feb --- 8. Feb} &
+  \rotatebox[origin=c]{50}{9. Feb --- 15. Feb} &
+  \rotatebox[origin=c]{50}{16. Feb --- 22. Feb} &
+  \rotatebox[origin=c]{50}{23. Feb --- 1. März} &
+  \rotatebox[origin=c]{50}{2. März --- 8. März} &
+  \rotatebox[origin=c]{50}{9. März --- 15. März} &
+  \rotatebox[origin=c]{50}{16. März --- 22. März} &
+  \rotatebox[origin=c]{50}{23. März --- 29. März}
+%  \rotatebox[origin=c]{80}{30. März --- 5. April} &
+%  \rotatebox[origin=c]{80}{6. April --- 12. April} &
+%  \rotatebox[origin=c]{80}{13. April --- 19. April} &
+%  \rotatebox[origin=c]{80}{20. April --- 26. April} &
+%  \rotatebox[origin=c]{80}{27. April --- 3. Mai}
+  \\
+
+  \midrule
+  \multicolumn{9}{c}{\sc Küche} \\
+  \midrule
+
+  Saugen &&&&&&&& \\
+  \midrule[0.1pt]
+  Wischen &&&&&&&& \\
+  \midrule[0.1pt]
+  Flächen, Ofen, Kastentüre, Fensterbrett &&&&&&&& \\
+  \midrule[0.1pt]
+  Regale &&&&&&&& \\
+  \midrule[0.1pt]
+  Abwasch, Armaturen &&&&&&&& \\
+  \midrule[0.1pt]
+  Müllecke &&&&&&&& \\
+  \midrule[0.1pt]
+  Bleche &&&&&&&& \\
+  \midrule[0.1pt]
+  Fliesen, Lichtschalter &&&&&&&& \\
+  \midrule[0.1pt]
+  Kästen innen &&&&&&&& \\
+  \midrule[0.1pt]
+  Kühlschränke innen &&&&&&&& \\
+  \midrule[0.1pt]
+  Tür &&&&&&&& \\
+  \midrule[0.1pt]
+  Fenster &&&&&&&& \\
+  \midrule[0.1pt]
+  Lampenschirm, Rohre, Wände &&&&&&&& \\
+
+  \midrule
+  \multicolumn{9}{c}{\sc Bad} \\
+  \nobreakmidrule
+
+  Wischen &&&&&&&& \\
+  \midrule[0.1pt]
+  Saugen, Decke &&&&&&&& \\
+  \midrule[0.1pt]
+  Vorhang, Handtücher &&&&&&&& \\
+  \midrule[0.1pt]
+  Ost (Wannenb.) &&&&&&&& \\
+  \midrule[0.1pt]
+  Süd (Beckenb.) &&&&&&&& \\
+  \midrule[0.1pt]
+  Nord \& West &&&&&&&& \\
+  \midrule[0.1pt]
+  Entkalken &&&&&&&& \\
+
+  \midrule
+  \multicolumn{9}{c}{\sc WC} \\
+  \nobreakmidrule
+
+  Klo, Brille, Besteck &&&&&&&& \\
+  \midrule[0.1pt]
+  Wischen &&&&&&&& \\
+  \midrule[0.1pt]
+  Saugen &&&&&&&& \\
+  \midrule[0.1pt]
+  Spülkasten, Ablagen, Inhalt, Tür, Lichtschalter, Rohre &&&&&&&& \\
+  \midrule[0.1pt]
+  Neugestalten, Entkalken &&&&&&&& \\
+
+  \midrule
+  \multicolumn{9}{c}{\sc Vorraum \& Stiegenhaus} \\
+  \nobreakmidrule
+
+  Saugen, Wände &&&&&&&& \\
+  \midrule[0.1pt]
+  Wischen, Abtropftassen, Teppiche &&&&&&&& \\
+  \midrule[0.1pt]
+  Hinterm Vorhang, Schuhkasten &&&&&&&& \\
+  \midrule[0.1pt]
+  Ablageflächen, Fensterbrett, Spiegel, Lichtschalter, Sicherungskasten, Handlauf &&&&&&&& \\
+  \midrule[0.1pt]
+  Palme Waschen &&&&&&&& \\
+  \midrule[0.1pt]
+  Tür, Heizkörper, Lampenschirm &&&&&&&& \\
+  \midrule[0.1pt]
+  Hausapotheke &&&&&&&& \\
+
+  \midrule
+  \multicolumn{9}{c}{\sc Gästekammerl} \\
+  \nobreakmidrule
+
+  Saugen &&&&&&&& \\
+  \midrule[0.1pt]
+  Wände &&&&&&&& \\
+  \midrule[0.1pt]
+  Abstauben &&&&&&&& \\
+
+  \midrule
+  \multicolumn{9}{c}{\sc Müll} \\
+  \nobreakmidrule
+
+  Entsorgung, Abführarrangements, Bioputz &&&&&&&& \\
+  \midrule[0.1pt]
+  Containerputz &&&&&&&& \\
+
+  \midrule
+  \multicolumn{9}{c}{\sc Rund ums Haus} \\
+  \nobreakmidrule
+
+  Ums Haus \& Laube Kehren / Schneeschaufeln, Aschenbecherstützpunkt Abräumen &&&&&&&& \\
+
+  \bottomrule
+\end{longtable}
+
+\end{center}
+
+\end{landscape}
+\end{document}
+
